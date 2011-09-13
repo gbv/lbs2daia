@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<title ppn="664334679">
+  <labels>
+    <label show="true" code="copy.availability">Verfügbarkeit</label>
+    <label show="true" code="copy.description">Ausleihstatus</label>
+    <label show="false" code="copy.shelfmark">Signatur</label>
+    <label show="false" code="copy.location">Standort</label>
+    <label show="true" code="copy.loanperiod">Ausleihfrist</label>
+    <label show="true" code="copy.loanindication">Ausleihindikator</label>
+    <label show="true" code="copy.reservations">Anzahl Vormerkungen</label>
+    <label show="true" code="copy.messages">Ausleihstatus</label>
+    <label show="true" code="volume.volumebar">Mediennummer</label>
+    <label show="true" code="volume.volumeinformation">Bandinformation</label>
+    <label show="true" code="volume.availability">Verfügbarkeit</label>
+    <label show="true" code="volume.description">Ausleihstatus</label>
+    <label show="true" code="volume.shelfmark">Signatur</label>
+    <label show="true" code="volume.location">Standort</label>
+    <label show="true" code="volume.loanperiod">Ausleihfrist</label>
+    <label show="true" code="volume.reservations">Anzahl Vormerkungen</label>
+    <label show="true" code="volume.messages">Ausleihstatus</label>
+  </labels>
+  <titleReservationAllowed>true</titleReservationAllowed>
+  <availability>0</availability>
+  <description>Nicht verfügbar</description>
+  <copies>
+    <copy epn="126435276X">
+      <availability>0</availability>
+      <description>Nicht verfügbar</description>
+      <shelfmark>AZP:PHI AZP</shelfmark>
+      <location>Freihand</location>
+      <loanindication>Praesenzbestand</loanindication>
+      <total_volume_number>1</total_volume_number>
+      <first_volume_index>0</first_volume_index>
+      <set_volume_number>1</set_volume_number>
+      <volumes>
+        <volume volume_number="827149">
+          <volumebar>HIL2$04144120</volumebar>
+          <volumeinformation> </volumeinformation>
+          <availability>0</availability>
+          <description>Nicht verfügbar</description>
+          <messages>
+            <message>Nicht ausleihbar</message>
+          </messages>
+        </volume>
+      </volumes>
+      <messages>
+        <message>Nicht ausleihbar</message>
+      </messages>
+    </copy>
+    <copy epn="1261651340">
+      <availability>0</availability>
+      <description>Nicht verfügbar</description>
+      <shelfmark>Z PHI : P04-20,1</shelfmark>
+      <location>Freihand</location>
+      <loanindication>Praesenzbestand</loanindication>
+      <total_volume_number>1</total_volume_number>
+      <first_volume_index>0</first_volume_index>
+      <set_volume_number>1</set_volume_number>
+      <volumes>
+        <volume volume_number="826600">
+          <volumebar>HIL2$0406254X</volumebar>
+          <volumeinformation> </volumeinformation>
+          <availability>0</availability>
+          <description>Nicht verfügbar</description>
+          <messages>
+            <message>Nicht ausleihbar</message>
+          </messages>
+        </volume>
+      </volumes>
+      <messages>
+        <message>Nicht ausleihbar</message>
+      </messages>
+    </copy>
+  </copies>
+  <messages/>
+</title>

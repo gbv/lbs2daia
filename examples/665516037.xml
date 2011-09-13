@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<title ppn="665516037">
+  <labels>
+    <label show="true" code="copy.availability">Verfügbarkeit</label>
+    <label show="true" code="copy.description">Ausleihstatus</label>
+    <label show="false" code="copy.shelfmark">Signatur</label>
+    <label show="false" code="copy.location">Standort</label>
+    <label show="true" code="copy.loanperiod">Ausleihfrist</label>
+    <label show="true" code="copy.loanindication">Ausleihindikator</label>
+    <label show="true" code="copy.reservations">Anzahl Vormerkungen</label>
+    <label show="true" code="copy.messages">Ausleihstatus</label>
+    <label show="true" code="volume.volumebar">Mediennummer</label>
+    <label show="true" code="volume.volumeinformation">Bandinformation</label>
+    <label show="true" code="volume.availability">Verfügbarkeit</label>
+    <label show="true" code="volume.description">Ausleihstatus</label>
+    <label show="true" code="volume.shelfmark">Signatur</label>
+    <label show="true" code="volume.location">Standort</label>
+    <label show="true" code="volume.loanperiod">Ausleihfrist</label>
+    <label show="true" code="volume.reservations">Anzahl Vormerkungen</label>
+    <label show="true" code="volume.messages">Ausleihstatus</label>
+  </labels>
+  <titleReservationAllowed>true</titleReservationAllowed>
+  <availability>1</availability>
+  <description>Verfügbar für Reservierung</description>
+  <actionurl>http://opac.lbs-hildesheim.gbv.de:9090/LBS_WEB/listing/showVolumes.htm?BES=1&amp;LAN=DE&amp;USR=1000&amp;PPN=66551603</actionurl>
+  <copies>
+    <copy epn="1265054304">
+      <availability>1</availability>
+      <description>Verfügbar für Reservierung</description>
+      <actionurl>http://opac.lbs-hildesheim.gbv.de:9090/LBS_WEB/listing/showVolumes.htm?BES=1&amp;LAN=DE&amp;USR=1000&amp;PPN=66551603&amp;EPN=126505430</actionurl>
+      <shelfmark>ERZ 660 : P06(4.)</shelfmark>
+      <location>Freihand</location>
+      <loanindication>ausleihbar</loanindication>
+      <total_volume_number>1</total_volume_number>
+      <first_volume_index>0</first_volume_index>
+      <set_volume_number>1</set_volume_number>
+      <volumes>
+        <volume volume_number="827588">
+          <volumebar>HIL2$04222385</volumebar>
+          <volumeinformation> </volumeinformation>
+          <availability>1</availability>
+          <description>Verfügbar für Reservierung</description>
+          <actionurl>http://opac.lbs-hildesheim.gbv.de:9090/LBS_WEB/listing/showVolumes.htm?BES=1&amp;LAN=DE&amp;USR=1000&amp;PPN=66551603&amp;EPN=126505430&amp;VOLUME=827588</actionurl>
+          <loanperiod>06.10.2011</loanperiod>
+          <reservations>0</reservations>
+          <messages>
+            <message>Ausgeliehen</message>
+          </messages>
+        </volume>
+      </volumes>
+      <messages>
+        <message>Ausgeliehen</message>
+      </messages>
+    </copy>
+    <copy epn="1265054312">
+      <availability>1</availability>
+      <description>Verfügbar für Reservierung</description>
+      <actionurl>http://opac.lbs-hildesheim.gbv.de:9090/LBS_WEB/listing/showVolumes.htm?BES=1&amp;LAN=DE&amp;USR=1000&amp;PPN=66551603&amp;EPN=126505431</actionurl>
+      <shelfmark>ERZ 660 : P06(4.),b</shelfmark>
+      <location>Freihand</location>
+      <loanindication>ausleihbar</loanindication>
+      <total_volume_number>1</total_volume_number>
+      <first_volume_index>0</first_volume_index>
+      <set_volume_number>1</set_volume_number>
+      <volumes>
+        <volume volume_number="827589">
+          <volumebar>HIL2$04222393</volumebar>
+          <volumeinformation> </volumeinformation>
+          <availability>1</availability>
+          <description>Verfügbar für Reservierung</description>
+          <actionurl>http://opac.lbs-hildesheim.gbv.de:9090/LBS_WEB/listing/showVolumes.htm?BES=1&amp;LAN=DE&amp;USR=1000&amp;PPN=66551603&amp;EPN=126505431&amp;VOLUME=827589</actionurl>
+          <loanperiod>27.09.2011</loanperiod>
+          <reservations>0</reservations>
+          <messages>
+            <message>Ausgeliehen</message>
+          </messages>
+        </volume>
+      </volumes>
+      <messages>
+        <message>Ausgeliehen</message>
+      </messages>
+    </copy>
+  </copies>
+  <messages/>
+</title>

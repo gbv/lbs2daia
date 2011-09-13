@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<title ppn="668108274">
+  <labels>
+    <label show="true" code="copy.availability">Verfügbarkeit</label>
+    <label show="true" code="copy.description">Ausleihstatus</label>
+    <label show="false" code="copy.shelfmark">Signatur</label>
+    <label show="false" code="copy.location">Standort</label>
+    <label show="true" code="copy.loanperiod">Ausleihfrist</label>
+    <label show="true" code="copy.loanindication">Ausleihindikator</label>
+    <label show="true" code="copy.reservations">Anzahl Vormerkungen</label>
+    <label show="true" code="copy.messages">Ausleihstatus</label>
+    <label show="true" code="volume.volumebar">Mediennummer</label>
+    <label show="true" code="volume.volumeinformation">Bandinformation</label>
+    <label show="true" code="volume.availability">Verfügbarkeit</label>
+    <label show="true" code="volume.description">Ausleihstatus</label>
+    <label show="true" code="volume.shelfmark">Signatur</label>
+    <label show="true" code="volume.location">Standort</label>
+    <label show="true" code="volume.loanperiod">Ausleihfrist</label>
+    <label show="true" code="volume.reservations">Anzahl Vormerkungen</label>
+    <label show="true" code="volume.messages">Ausleihstatus</label>
+  </labels>
+  <titleReservationAllowed>true</titleReservationAllowed>
+  <availability>0</availability>
+  <description>Nicht verfügbar</description>
+  <copies>
+    <copy epn="1267220287">
+      <availability>0</availability>
+      <description>Nicht verfügbar</description>
+      <shelfmark>GER 521:Z68 : BM21</shelfmark>
+      <location>Freihand</location>
+      <loanindication>ausleihbar</loanindication>
+      <total_volume_number>0</total_volume_number>
+      <first_volume_index>0</first_volume_index>
+      <set_volume_number>0</set_volume_number>
+      <messages>
+        <message>Noch nicht verfügbar</message>
+      </messages>
+    </copy>
+  </copies>
+  <messages/>
+</title>

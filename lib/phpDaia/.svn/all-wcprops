@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svnroot/daia/!svn/ver/82/trunk/phpDaia
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/daia/!svn/ver/3/trunk/phpDaia/LICENSE
+END
+daia.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/daia/!svn/ver/39/trunk/phpDaia/daia.php
+END
+daia.css
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/daia/!svn/ver/14/trunk/phpDaia/daia.css
+END
+yourlocationsfile.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/daia/!svn/ver/20/trunk/phpDaia/yourlocationsfile.txt
+END
+Z3950Connector.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/daia/!svn/ver/9/trunk/phpDaia/Z3950Connector.php
+END
+daia.ini.sample
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/daia/!svn/ver/61/trunk/phpDaia/daia.ini.sample
+END
+daia_ws.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/daia/!svn/ver/53/trunk/phpDaia/daia_ws.php
+END
+xmlverbatim.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/daia/!svn/ver/14/trunk/phpDaia/xmlverbatim.xsl
+END
+pica2daia.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/daia/!svn/ver/82/trunk/phpDaia/pica2daia.php
+END
+daia.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/daia/!svn/ver/14/trunk/phpDaia/daia.xsl
+END
+daia_xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/daia/!svn/ver/40/trunk/phpDaia/daia_xml.php
+END
+test.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/daia/!svn/ver/3/trunk/phpDaia/test.php
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/daia/!svn/ver/3/trunk/phpDaia/MANIFEST
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/daia/!svn/ver/3/trunk/phpDaia/INSTALL
+END
+icons
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/daia/!svn/ver/25/trunk/phpDaia/icons
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/daia/!svn/ver/14/trunk/phpDaia/Makefile
+END
