@@ -49,7 +49,7 @@ if ($rawavail) {
     $availability = $root->getElementsByTagName('availability')->item(0);
     if ($availability) $availability = $availability->textContent;
 
-    if ($availability and $availability >= 0) {
+    if ($availability >= 0) {
         $id = $lbs->getRecordURI( $ppn );
         $href = $lbs->getRecordLink( $ppn );
 
