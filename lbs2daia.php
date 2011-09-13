@@ -95,8 +95,8 @@ if ($pica) {
     foreach ($pica->documentElement->childNodes as $child) {
         if ($child->nodeType != 1 || $child->tagName != 'datafield') continue;
         $tag = $child->getAttribute('tag');#->value;
-        // Feld 101@ und 201@ werden ggf. benötigt für Standort-URIs
-        if ($tag != '101@' && $tag != '201@') continue; 
+        // Feld 101@, 201@ und 209A werden ggf. benötigt für Standort-URIs
+        if ($tag != '101@' && $tag != '201@' && $tag != '209A') continue; 
         $field = $dom->importNode( $child, true );
         $dom->documentElement->appendChild( $field );
     }
