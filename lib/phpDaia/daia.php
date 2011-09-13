@@ -228,8 +228,9 @@ class DAIA {
     protected $message = array();
 
     public function __construct($docs = null) {
-        foreach ($docs as $docId) {
-            $this->documents[] = new DAIA_Document($docId);
+        foreach ($docs as $doc) {
+            if (!is_object($doc)) $doc = new DAIA_Document($doc);
+            $this->documents[] = $doc;
         }
     }
 

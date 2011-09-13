@@ -2,12 +2,20 @@
 
 class LBS_Availability {
     var $lbsbase;
-    var $dbkey;
+    var $dbkey;        # gbv:dbkey
+    var $picabase;     # gbv:picabase
+    var $homepage;     # foaf:homepage
+    var $librarytitle;
+
     var $unapibase = 'http://unapi.gbv.de/';
 
     public function __construct( $config ) {
-        $this->lbsbase = $config['lbsbase'];
-        $this->dbkey   = @$config['dbkey2'];
+        $this->dbkey    = $config['dbkey'];
+        $this->picabase = $config['picabase']; # lässt sich auch perl Linked Data aus dbkey ermitteln
+        $this->lbsbase  = $config['lbsbase'];
+        $this->homepage = @$config['homepage'];
+        if ($this->homepage) $this->homepage = $this->picabase;
+        $this->librarytitle = @$config['librarytitle'];
     }
 
     /**
@@ -35,9 +43,37 @@ class LBS_Availability {
             $dom->formatOutput = true;
             $dom->loadXML($xml->asXML());
             return $dom;
-        } catch ( Exception $e ) {
-        }
+        } catch ( Exception $e ) { }
         return null;
+    }
+
+    public function getRecordURI( $ppn ) {
+        if (!$this->dbkey || !self::validPPN($ppn)) return;   
+
+        return 'http://uri.gbv.de/record/' . $this->dbkey . ":ppn:$ppn";
+    }
+
+    public function getRecordLink( $ppn ) {
+        if (!$this->picabase || !self::validPPN($ppn)) return;   
+
+        return $this->picabase . "PPNSET?PPN=$ppn";
+    }
+
+    public function getPicaXML( $ppn ) {
+        if (!$this->picabase || !self::validPPN($ppn)) return;   
+        try {
+            $url = $this->unapibase . '?format=picaxml&id=' . $this->dbkey . ":ppn:$ppn";
+            $doc = new DOMDocument();
+            $dom->preserveWhiteSpace = false;
+            $dom->formatOutput = true;
+            $doc->load( $url );
+            return $doc;
+        } catch ( Exception $e ) { }
+        return null; 
+    }
+
+    public static function validPPN( $ppn ) {
+        return preg_match('/^\d+[0-9X]?$/i', $ppn);
     }
 }
 

@@ -48,8 +48,12 @@ class DAIA_XML {
         $daiaRoot->setAttribute('timestamp', $this->daia->getTimestamp());
         $daiaRoot->setAttributeNS('http://www.w3.org/2000/xmlns/', 'xmlns:s', 'http://www.w3.org/2001/XMLSchema-instance/');
         $daiaRoot->setAttributeNS('http://www.w3.org/2001/XMLSchema-instance/', 's:schemaLocation', 'http://ws.gbv.de/daia/ http://ws.gbv.de/daia/daia.xsd');
-        /*$daiaRoot->appendChild($this->getMessage(array()));*/
-        $daiaRoot->appendChild($this->getInstitution($this->daia->getInstitution()));
+
+        foreach($this->daia->getMessage() as $message) {
+            $daiaRoot->appendChild($this->getMessage($message, true));
+        }
+
+        $daiaRoot->appendChild($this->getInstitution($this->daia->getInstitution(),true));
         $xml->appendChild($daiaRoot);
 
         foreach ($this->daia->getDocuments() as $holding) {
@@ -73,7 +77,7 @@ class DAIA_XML {
         	$element = $this->xml->createElement('document');
         }
         
-        $element->setAttribute('id', $doc->id);
+        $element->setAttribute('id', (string)$doc->id);
         if ($doc->holdingHref !== null) $element->setAttribute('href', $doc->holdingHref);
         $items = $doc->getItems();
         if (count($doc->getMessage()) > 0) {
