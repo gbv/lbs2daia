@@ -9,8 +9,8 @@ class LBS_Availability {
 
     var $unapibase = 'http://unapi.gbv.de/';
 
-    public function __construct( $config ) {
-        $this->dbkey    = $config['dbkey'];
+    public function __construct( $dbkey, $config ) {
+        $this->dbkey    = $dbkey;
         $this->picabase = $config['picabase']; # lässt sich auch perl Linked Data aus dbkey ermitteln
         $this->lbsbase  = $config['lbsbase'];
         $this->homepage = @$config['homepage'];
@@ -36,7 +36,8 @@ class LBS_Availability {
     public function getTitleinfoDOM( $ppn, $language = 'en' ) {
         $url = $this->getTitleinfoURL( $ppn, 'de' );
         try {
-            $xml = file_get_contents( $url );
+            $xml = @file_get_contents( $url );
+            if (!$xml) throw new Exception("Failed to access $url");
             $xml = simplexml_load_string($xml);
             $dom = new DOMDocument('1.0');
             $dom->preserveWhiteSpace = false;

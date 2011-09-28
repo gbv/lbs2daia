@@ -53,7 +53,10 @@ class DAIA_XML {
             $daiaRoot->appendChild($this->getMessage($message, true));
         }
 
-        $daiaRoot->appendChild($this->getInstitution($this->daia->getInstitution(),true));
+        $institution = $this->daia->getInstitution();
+        if ($institution) {
+            $daiaRoot->appendChild($this->getInstitution($institution,true));
+        }
         $xml->appendChild($daiaRoot);
 
         foreach ($this->daia->getDocuments() as $holding) {
@@ -201,6 +204,7 @@ class DAIA_XML {
         if ($institution->getHref() !== null) $node->setAttribute('href', $institution->getHref());
         return $node;
     }
+
     public function getDepartment($department, $namespaced = false) {
         if ($namespaced === true) {
         	$node = $this->xml->createElementNS('http://ws.gbv.de/daia/', 'd:department', $department->getContent());
